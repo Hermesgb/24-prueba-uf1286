@@ -1,14 +1,25 @@
-function generarArrayBidimensional() {
-  function generarArray() {
+function generarArrayBidimensional([]) {
+  function generarArray([]) {
+    var elementosRandom = Math.floor(Math.random() * 10);
     return [0, 1, 2];
   }
-
-  var array = [];
-  for (var i = 0; i < 10; i++) {
-    array.push(generarArray());
-  }
-  return array;
 }
+
+var array = [];
+for (var i = 0; i < elementosRandom; i++) {
+  array.push(generarArray());
+}
+return array;
+
+
+var elementosRandom = Math.floor(Math.random() * 6) + 4;
+var elementosArgumento = []
+var elementos = [];
+for (i = 0; i < elementosRandom; i++) {
+  elementos[i] = elementosArgumento[i];
+}
+generarArrayBidimensional[elementos];
+
 
 function mostrarArrayBidimensional(arrayBidimensional) {
   function mostrarArray(array) {
@@ -34,3 +45,4 @@ function mostrarArrayBidimensional(arrayBidimensional) {
 }
 
 mostrarArrayBidimensional(generarArrayBidimensional());
+
